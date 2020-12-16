@@ -62,15 +62,19 @@ lbl9 = Label(root, text="fried rice", font="times 15 bold")
 lbl9.place(x=250, y=150)
 
 e1= Entry(root)
+e1.insert(END, '0')
 e1.place(x=60, y=100)
 
 e2= Entry(root)
+e2.insert(END, '0')
 e2.place(x=250, y=100)
 
 e3= Entry(root)
+e3.insert(END, '0')
 e3.place(x=60, y=180)
 
 e4= Entry(root)
+e4.insert(END, '0')
 e4.place(x=250, y=180)
 
 btn1 =Button(root,text="Total", font="times 15 bold", command=calculate)
