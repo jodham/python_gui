@@ -15,7 +15,13 @@ def calculate():
     lbl12 = Label(root, text=total, font="times 15 bold")
     lbl12.place(x=100, y=300)
 
-
+label = Label(root, font="times 15 bold")
+label.place(x=550, y=20)
+def digitalClock():
+    text_input= time.strftime("%H:%M:%S")
+    label.config(text=text_input)
+    label.after(200, digitalClock)
+digitalClock()
 
 
 #styling the label widget
